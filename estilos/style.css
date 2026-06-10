@@ -147,7 +147,6 @@ nav#menu > div.opcao > p {
     font-size: 0.7em;
 }
 
-
 section {
     justify-items: center;
 }
@@ -183,9 +182,9 @@ div.item > p {
 }
 
 section#bebidas h4{
-    font-family: var(--fonte-titulo);
+    font-family: var(--fonte-texto);
     color: var(--vermelho);
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
 }
 
