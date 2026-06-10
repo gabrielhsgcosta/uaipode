@@ -29,6 +29,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -120,7 +121,7 @@ nav#menu {
     scrollbar-width: none;
     background-color: var(--fundo-cards);
     max-width: 430px;
-    margin: 0 auto 10px auto;
+    margin: auto;
 }
 
 nav#menu::-webkit-scrollbar {
@@ -161,8 +162,8 @@ section  h3 {
 
 div.item {
     display: grid;
-    width: 90%;
-    margin: 5px;
+    width: min(90%, 430px);
+    margin: 5px auto;
     gap: 20px;
     grid-template-columns: 1fr 20%;
     background-color: var(--fundo-cards);
