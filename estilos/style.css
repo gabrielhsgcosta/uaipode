@@ -29,7 +29,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -112,7 +111,7 @@ nav#menu {
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
-    width: 90%;
+    width: 350px;
     max-width: 430px;
     gap: 10px;
     padding: 10px;
@@ -162,10 +161,10 @@ section  h3 {
 
 div.item {
     display: grid;
-    width: min(90%, 430px);
+    width: 350px;
     margin: 5px auto;
     gap: 20px;
-    grid-template-columns: 1fr 20%;
+    grid-template-columns: 1fr 22%;
     background-color: var(--fundo-cards);
     padding: 5px;
     border: 2px solid var(--borda);
