@@ -77,8 +77,6 @@ header h3 {
 header > a {
     display: block;
     text-decoration: none;
-    text-align: center;
-    margin: auto;
 }
 
 div#social {
@@ -164,7 +162,7 @@ section  h3 {
 
 div.item {
     display: grid;
-    width: 400px;
+    width: min(90%, 430px);
     margin: 5px auto;
     gap: 20px;
     grid-template-columns: 1fr 20%;
@@ -185,6 +183,7 @@ section#bebidas h4{
     font-family: var(--fonte-titulo);
     color: var(--vermelho);
     font-size: 1.5em;
+    text-align: left;
 }
 
 section#sobremesas {
