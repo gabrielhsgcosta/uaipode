@@ -76,6 +76,7 @@ header h3 {
 header > a {
     display: block;
     text-decoration: none;
+    margin: auto;
 }
 
 div#social {
@@ -151,13 +152,16 @@ section {
     justify-items: center;
 }
 
+section#entradas {
+    padding-top: 20px;
+}
+
 section  h3 {
     font-family: var(--fonte-titulo);
     color: var(--vermelho);
     text-align: center;
     font-size: 1.5em;
 }
-
 
 div.item {
     display: grid;
@@ -182,7 +186,6 @@ section#bebidas h4{
     font-family: var(--fonte-titulo);
     color: var(--vermelho);
     font-size: 1.5em;
-    text-align: left;
 }
 
 section#sobremesas {
