@@ -42,9 +42,11 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     text-align: center;
-    justify-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -74,9 +76,7 @@ header h3 {
 }
 
 header > a {
-    display: block;
     text-decoration: none;
-    margin: auto;
 }
 
 div#social {
@@ -114,7 +114,7 @@ nav#menu {
     overflow-y: hidden;
     width: 350px;
     max-width: 430px;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid var(--borda);
@@ -186,6 +186,7 @@ section#bebidas h4{
     font-family: var(--fonte-titulo);
     color: var(--vermelho);
     font-size: 1.5em;
+    text-align: center;
 }
 
 section#sobremesas {
