@@ -40,12 +40,6 @@ header {
     align-items: center;
     width: 100%;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--fundo-principal);
-    padding: 10px;
-    box-shadow: 1px 1px 20px var(--fundo-principal);
 }
 
 header img {
@@ -102,19 +96,26 @@ div#perfil > p {
 }
 
 nav#menu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     overflow-x: auto;
     overflow-y: hidden;
     width: 350px;
     max-width: 430px;
     gap: 45px;
     padding: 10px 20px;
+    margin: 10px auto;
+    margin-bottom: 20px;
     border-radius: 10px;
     border: 2px solid var(--borda);
-    scrollbar-width: none;
     background-color: var(--fundo-cards);
-    max-width: 430px;
-    margin: auto;
+    scrollbar-width: none;
+    text-align: center;
+    box-shadow: 2px 2px 50px var(--fundo-principal);
 }
 
 nav#menu::-webkit-scrollbar {
@@ -162,11 +163,7 @@ nav#menu > div.opcao > p {
 
 section {
     justify-items: center;
-    scroll-margin-top: 340px;
-}
-
-section#entradas {
-    padding-top: 20px;
+    scroll-margin-top: 90px;
 }
 
 section  h3 {
