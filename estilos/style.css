@@ -10,17 +10,10 @@
 }
 
 :root {
-    --preto: #0C0604;
     --fundo-principal: #0C0604;
-    --fundo-secundario: #14100D;
     --fundo-cards: #18120E;
-    --hover-cards: #22170F;
-    --dourado: #E88D1B;
-    --dourado-escuro: #A2611C;
     --vermelho: #C73406;
     --texto: #EFDB9D;
-    --texto-secundario: #D9C28A;
-    --texto-descricao: #BDA56D;
     --borda: #6B3E14;
 
     --fonte-texto: 'Montserrat', sans-serif;
@@ -114,8 +107,8 @@ nav#menu {
     overflow-y: hidden;
     width: 350px;
     max-width: 430px;
-    gap: 10px;
-    padding: 10px;
+    gap: 45px;
+    padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid var(--borda);
     scrollbar-width: none;
@@ -137,7 +130,27 @@ nav#menu > div.opcao {
     min-width: 75px;
 }
 
-nav#menu > div.opcao > i {
+.opcao {
+    transition: .3s;
+    border-bottom: 3px solid transparent;
+}
+
+.opcao.ativa {
+    border-bottom: 3px solid var(--vermelho);
+}
+
+.opcao.ativa a, .opcao.ativa i {
+    color: var(--vermelho);
+}
+
+nav#menu > div.opcao a {
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: bolder;
+    padding: 5px;
+}
+
+nav#menu > div.opcao > a > i {
     font-size: 1.3em;
     margin-bottom: 4px;
 }
@@ -149,6 +162,7 @@ nav#menu > div.opcao > p {
 
 section {
     justify-items: center;
+    scroll-margin-top: 335px;
 }
 
 section#entradas {
@@ -189,5 +203,5 @@ section#bebidas h4{
 }
 
 section#sobremesas {
-    margin-bottom: 40px;
+    margin-bottom: 200px;
 }
