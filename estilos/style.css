@@ -15,6 +15,7 @@
     --vermelho: #C73406;
     --texto: #EFDB9D;
     --borda: #6B3E14;
+    --texto-descricao: #f3e5bd;
 
     --fonte-texto: 'Montserrat', sans-serif;
     --fonte-titulo: 'Cinzel', serif;
@@ -187,9 +188,46 @@ div.item {
     border-radius: 5px;
 }
 
-div.item > p {
+div.item-descricao {
+    display: grid;
+    width: 350px;
+    margin: 5px auto;
+    gap: 0px 20px;
+    grid-template-columns: 1fr 22%;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: var(--fundo-cards);
+    padding: 5px;
+    border: 2px solid var(--borda);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+div.preco > p,
+div.item > p,
+div.item-descricao > p,
+div.item > h5,
+div.item-descricao > h5{
     font-size: 1em;
     font-weight: bolder;
+}
+
+details.descricao > p {
+    font-weight: bolder;
+    font-size: .6em;
+    color: var(--texto-descricao);
+}
+
+summary {
+    color: var(--vermelho);
+    font-weight: bolder;
+    font-size: .6em;
+    cursor: pointer;
+    padding: 5px;
+}
+
+div.preco {
+    grid-area: 1 / 2 / -1 / -1;
 }
 
 section#bebidas h4{
